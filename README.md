@@ -1,274 +1,103 @@
-EXPERIMENT-5
+# 💻 Decision Making in C++
 
+## 🎯 Aim  
+To explore key decision-making structures in C++ including if else, if else if ladder, and switch case through foundational examples like checking odd or even, finding the largest of three numbers, identifying vowels or consonants, and using switch statements.
 
+---
 
+## 📚 Theory
 
+- Conditional statements control the flow of execution based on evaluated conditions, allowing for dynamic and flexible logic handling.  
+- These constructs are crucial for enabling programs to “think” and respond to input or state variations.
 
+---
 
+## 🔄 If Else Statement
 
-Name: Vaishnavi Pangare
+The if else structure allows a program to make a binary decision.  
+If a condition evaluates as true, one block of code is executed; otherwise, the alternate block runs.  
+It is useful for simple yes or no logic checks where you’re choosing between two distinct paths.
 
+---
 
+## 🧭 If Else If Else Ladder
 
+This expands decision making to multiple conditions.  
+The program evaluates conditions sequentially from top to bottom.  
+As soon as one condition is true, its corresponding block runs and the rest are skipped.  
+The final else acts as a fallback if none of the prior conditions match.  
+Ideal for layered logic where multiple outcomes are possible.
 
+---
 
+## 🎚️ Switch Case Statement
 
+The switch case structure offers a cleaner alternative to multiple if checks when you're dealing with discrete values such as menu options or fixed states.  
+It matches the value of a variable against predefined cases and executes the matched case block.  
+A default case handles anything that doesn’t fit the listed options.
 
+---
 
+## 📋 Algorithms
 
+### ✅ Odd or Even Number Detection
 
+1. Start  
+2. Declare an integer variable `num`  
+3. Prompt the user to enter a number  
+4. Input the number into `num`  
+5. Check if `num % 2 == 0`  
+   - If true → Display "Even"  
+   - Else → Display "Odd"  
+6. End
 
-PRN: 25070123501
+---
 
+### ✅ Largest of Three Numbers
 
+1. Start  
+2. Declare three integer variables `a`, `b`, and `c`  
+3. Prompt the user to enter all three numbers  
+4. Input the values  
+5. Compare:  
+   - If `a > b && a > c` → Display `a` is largest  
+   - Else if `b > c` → Display `b` is largest  
+   - Else → Display `c` is largest  
+6. End
 
+---
 
+### ✅ Vowel or Consonant Using ASCII
 
+1. Start  
+2. Declare a character variable `ch`  
+3. Prompt the user to enter a character  
+4. Input `ch`  
+5. Check if `ch` is between `'A'` to `'Z'` or `'a'` to `'z'` (ASCII 65–90 or 97–122)  
+   - If true → Check if `ch` is `'A', 'E', 'I', 'O', 'U'` or lowercase equivalents  
+     - If true → Display "Vowel"  
+     - Else → Display "Consonant"  
+   - Else → Display "Not a letter"  
+6. End
 
+---
 
+### ✅ Month Selector Using Switch Case
 
+1. Start  
+2. Declare an integer variable `choice`  
+3. Display menu options for months (1 to 12)  
+4. Prompt the user to enter a choice  
+5. Input `choice`  
+6. Use `switch(choice)`  
+   - Match cases from 1 to 12 to corresponding month  
+   - If no match → Display "Invalid Input"  
+7. End
 
+---
 
+## 🧠 Conclusion
 
-ENTC A3
-
-
-
-
-
-
-
-
-
-
-
-
-
-Title: Decision Making in C++
-
-
-
-
-
-
-
-
-
-In programming, decision making allows a program to choose different paths based on conditions. It's similar to how we take decisions in daily life — for example, “If it's raining, take an umbrella. Otherwise, don't.”
-
-
-
-
-
-
-
-C++ provides several decision control structures that help implement logic in programs. These include if, if-else, else-if, nested conditions, and switch-case. These constructs make programs smarter by allowing them to respond differently to different inputs or situations.
-
-
-
-
-
-Types of Decision Making in C++
-
-
-
-
-
-
-1. if Statement
-Executes a block of code only if a given condition is true.
-
-2. if-else Statement
-Runs one block if the condition is true, and another if it's false.
-
-3. else-if Ladder
-Used when multiple conditions need to be checked one after another.
-
-4. Nested if
-An if condition inside another if. Used when one condition depends on another.
-
-5. switch-case
-Best for fixed options (like menu choices or operator-based programs). Compares a variable with several constant cases and executes the matching one.
-
-Program on decision making
-
-
-
-
-
-
-1. Even or Odd Checker
-
-
-
-
-
-
-
-Checks if a number is divisible by 2. Uses the modulus operator and if-else condition to determine and display whether the number is even or odd.
-
-
-
-
-
-
-
-
-
-2. Vowel or Consonant Identifier
-
-
-
-
-
-
-
-
-Accepts a character input and checks whether it's a vowel using either if-else or a switch case. If not a vowel, it’s treated as a consonant.
-
-
-
-
-
-
-
-
-
-3. Largest of Three Numbers
-
-
-
-
-
-
-
-
-
-
-
-
-
-Takes three numbers and uses else-if ladder or nested if to compare and determine the largest among them.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4. Simple Calculator
-
-
-
-
-
-
-
-
-
-
-
-
-
-Implements a calculator using a switch statement. Based on the operator entered (+, -, *, /), it performs the respective arithmetic operation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5. Switch case with break statements (food Menu Program)
-
-
-
-
-
-
-
-
-
-Menu-driven application using switch-case. Displays a food item based on the user's numeric choice. A default message is shown for invalid selections.
-
-
-
-
-
-
-
-Algorithms
-
-
-
-
-
-
-
-1. Even or Odd Checker
-Take input as a number n.
-Check if n % 2 == 0.
-If true, print “Even”.
-Else, print “Odd”.
-
-
-
-
-
-
-2. Vowel or Consonant
-Take a character input.
-Convert it to lowercase (if needed).
-If it is a, e, i, o, or u, print “Vowel”.
-Else, print “Consonant”.
-
-
-
-
-
-
-3. Largest of Three Numbers
-Take input: a, b, and c.
-If a > b and a > c, print “a is largest”.
-Else if b > c, print “b is largest”.
-Else, print “c is largest”.
-
-
-
-
-
-
-
-
-
-
-
-
-
-Conclusion
-
-
-
-
-
-
-
-
-
-
-Decision-making statements are the backbone of logical flow in C++ programs. Whether it's a basic check using if, evaluating multiple paths using else-if, or using switch for cleaner alternatives, these tools make your programs flexible and responsive. The examples shared cover common scenarios and form a strong foundation for real-world programming logic.
+Decision making is at the heart of intelligent programming.  
+Whether you're branching logic with if else, scaling conditions with else if ladders, or simplifying options via switch case, mastering these structures equips you to write smarter and more dynamic code.  
+Let the compiler follow your logic line by line, decision by decision.
